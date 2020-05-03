@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    <style>
+        
+        .linso{
+            border:1px solid #ccc;
+        }
+        .linso{
+            border-collapse:collapse;
+            border-spacing: 0;
+            width: 28%;
+            display: table;
+            border:1px solid #ccc;
+        }
+        th{
+            text-align:left;
+            font-weight: bold;
+        }
+        .que{
+            font-family: Verdana,sans-serif;
+            line-height: 1.5;
+            font-size:32px;
+        }
+        .linso tr{
+            border-bottom:1px solid #ddd;
+        }
+        .disney{
+            text-align:justify-all;
+            font-weight: bold;
+        }
+        .disney2{
+            line-height: 48px;
+        }
+
+    </style>
+</head>
+<body>
+    <table class="linso">
+        <tbody class="que">
+            <tr>
+                <th>nome</th>
+                <th>preco</th>
+            </tr>
+            <tr>
+                <td class ='disney'>{% for nome in comidas %}
+                    <a href='/com/{{loop.index0}}'><span>{{nome}}</span><br /></a>{% endfor %}</td>
+                <td class='disney2'>4.50
+                    2.50 
+                    24.90
+                    5.50
+                    18.50
+                    </td>
+          
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
